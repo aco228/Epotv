@@ -1,0 +1,60 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <title>VaccinationValidation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="template/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="template/mg-style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="mgEevakcina" class="ng-scope">
+        <!-- ngView: --><div ng-view="" class="ng-scope"><div class="container pd-top  ng-scope">
+    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 offset-lg-2 offset-md-1 float-md-center">
+        <div class="jumbotron" style="background: linear-gradient(132deg, rgba(0,255,136,1) 0%, rgba(4,112,220,1) 100%)!important;">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="column">
+                        <h4 style="color:#fff">Covid-19 potvrda validacija</h4>
+                        <hr>
+                        <h4 style="color:#fff">Covid-19 certificate validation</h4>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+            <div ng-show="isValid" class="">
+                <div class="card" style="    background-image: url(template/gliph.png) !important;
+                     background-repeat:no-repeat !important;
+                     background-size:contain !important;
+                     background-position:center !important;
+                     text-align: center">
+                    <div class="card-body ">
+                        <h5 class="card-title ng-binding">NIKOLA RAIČEVIĆ</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ime i prezime,Name and lastname</h6>
+                        <h5 class="card-title ng-binding">348926-538570</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sifra potvrde</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Potvrda je <b style="color:#0470dc">VALIDNA</b></h6>
+                        <h5 class="card-title ng-binding">348926-538570</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Confirmation code</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Report is <b style="color:#0470dc">VALID</b></h6>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="!isValid" class="ng-hide">
+                <div class="card" style="    background-image: url(template/gliph.png) !important;
+                     background-repeat:no-repeat !important;
+                     background-size:contain !important;
+                     background-position:center !important;
+                     text-align: center">
+                    <div class="card-body ">
+                        <br>
+                        <br>
+                        <h6 class="card-subtitle mb-2 text-muted">Potvrda je <b style="color:#ff0034">NEVALIDNA</b></h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Report is <b style="color:#ff0034">NOT VALID</b></h6>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</body></html>

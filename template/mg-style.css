@@ -1,0 +1,20 @@
+.jumbotron {
+    /*background-color: #e9ecef;*/
+    text-align: center !important;
+    background: rgb(0,255,136) !important;
+/*    background: linear-gradient(132deg, rgba(0,255,136,1) 0%, rgba(4,112,220,1) 100%)!important;*/
+}
+.h1 {
+    color:#fff !important;
+}
+
+.pd-top{
+    padding-top: 20px;
+}
+
+.gliph{
+    background-image: url('template/gliph.png') !important;
+    background-repeat:no-repeat !important;
+    background-size:contain !important;
+    background-position:center !important;
+}
