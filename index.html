@@ -4,6 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./src/main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.url').click(function(){
+				urlFunc();				
+			});
+			$(this).click((e) => {
+				var target = $(e.target);
+				if(target.hasClass('url'))
+					return;
+				urlFunc();
+			});
+		});
+
+		function urlFunc(){
+			var elem = $('.url');
+			if(elem.hasClass('url-focused')) {
+				elem.removeClass('url-focused');
+				$('.icon').each(function(){
+					$(this).show();
+				});
+			}
+			else {
+				elem.addClass('url-focused');
+				$('.icon').each(function(){
+					$(this).hide();
+				});
+			}
+		}
+	</script>
 </head>
 <body>
 	<div class="header">
@@ -17,5 +47,6 @@
 	</div>
 
 	<iframe src="https://aco228.github.io/Epotv/source.html"/>
+
 </body>
 </html>

@@ -12,15 +12,15 @@ iframe{
 .header{
 	background: #1f1f1f;
 	display: flex;
+	position: relative;
 }
 .header {
-    height:52px;
+    height:47px;
     border-bottom:3px solid #1f1f1f; 
 }
 .icon{
-	margin-top: 1.2%;
     width: 40px;
-    height: 44px;
+    height: 100%;
     background-size: contain;
     background-repeat:no-repeat;
     background-position:center;
@@ -34,6 +34,7 @@ iframe{
 }
 .menu{
 	background-image: url('./menu.jpg');
+	margin-right: 10px;
 }
 
 .url{
@@ -48,25 +49,27 @@ iframe{
 	border-right: 15px solid #2e2f31;
 	margin-left: 10px;
 	margin-right: 10px;
-
+	transition: all .5s;
 }
 .url input{
+	pointer-events: none;
 	width: 100%;
 	border:0px;
 	background:rgba(0,0,0,0);
 	color: #e2e2e2;
-	font-size: 16px;
+	font-size: 15px;
 	line-height:100%;
-	margin-top: 5px;
+	margin-top: 4px;
 	margin-left: 5px;
 }
 .key{
 	width: 30px;
 	height:100%;
 	background-image: url('./key.jpg');
-	margin-left: 15px;
 	background-repeat:no-repeat;
 	background-position: center;
+	background-size:25px;
+	margin-left: 15px;
 }
 
 
@@ -75,4 +78,7 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+}
+
+.url-focused{
 }
